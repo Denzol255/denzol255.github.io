@@ -1,0 +1,168 @@
+.page {
+  // .page__auto
+
+  &__auto {
+  }
+}
+
+.auto {
+  // .auto__container
+
+  &__container {
+  }
+
+  // .auto__wrapper
+
+  &__wrapper {
+  }
+
+  // .auto__image
+
+  &__image {
+    &:not(:last-child) {
+      margin: 0 0 30px;
+    }
+  }
+
+  // .auto__info
+
+  &__info {
+    &:not(:last-child) {
+      margin: 0 0 30px;
+    }
+  }
+
+  // .auto__title
+
+  &__title {
+    font-size: 28px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: $mainColor;
+
+    &:not(:last-child) {
+      margin: 0 0 10px;
+    }
+  }
+
+  // .auto__desription
+
+  &__description {
+    font-size: 18px;
+    line-height: 120%;
+    color: $grayColor;
+  }
+
+  // .auto__features
+
+  &__features {
+    &:not(:last-child) {
+      margin: 0 0 30px;
+    }
+  }
+
+  // .auto__owner
+
+  &__owner {
+  }
+}
+
+.features {
+  // .features__title
+
+  &__title {
+    font-size: 22px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: $mainColor;
+
+    &:not(:last-child) {
+      margin: 0 0 10px;
+    }
+  }
+
+  // .features__cards
+
+  &__cards {
+  }
+
+  // .features__card
+
+  &__card {
+    font-size: 16px;
+    line-height: 150%;
+    &:not(:last-child) {
+      margin: 0 0 10px;
+    }
+  }
+
+  // .features__name
+
+  &__name {
+  }
+
+  // .features__value
+
+  &__value {
+    color: $grayColor;
+  }
+}
+
+.owner {
+  // .owner__title
+
+  &__title {
+    font-size: 22px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: $mainColor;
+
+    &:not(:last-child) {
+      margin: 0 0 10px;
+    }
+  }
+
+  // .owner__info
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: $mainColor;
+
+    :nth-child(n) {
+      &:not(:last-child) {
+        margin: 0 0 10px;
+      }
+    }
+  }
+
+  // .owner__name
+
+  &__name {
+  }
+
+  // .owner__text
+
+  &__text {
+  }
+
+  // .owner__data
+
+  &__data {
+    color: $grayColor;
+
+    // .owner__data_link
+
+    &_link {
+      color: $blueColor;
+    }
+  }
+
+  // .owner__owner
+
+  &__owner {
+  }
+}

@@ -1,0 +1,24 @@
+$mainColor: #0b1131;
+$grayColor: rgba(35, 47, 62, 0.48);
+$blueColor: #3029d9;
+$maxWidthLayout: 1440px;
+$maxWidthContainer: 1206px;
+$minWidth: 320px;
+$md2: 991.98px;
+$md3: 767.98px;
+$md4: 479.98px;
+$fontSize: 14;
+$fontFamily: "Poppins";
+
+// Подключение шрифта
+
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    src: url("../fonts/#{$file_name}.woff") format("woff"),
+      url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-family: $font_name;
+    font-weight: #{$weight};
+    font-style: #{$style};
+    font-display: swap;
+  }
+}

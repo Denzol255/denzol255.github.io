@@ -1,0 +1,27 @@
+body {
+  color: $mainColor;
+  background-color: #fff;
+  padding-top: 30px;
+
+  &._lock {
+    overflow: hidden;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.page {
+  flex: 1 1 auto;
+}
+
+._container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: $maxWidthContainer;
+}
