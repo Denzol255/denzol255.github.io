@@ -64,6 +64,14 @@
   // .auto__owner
 
   &__owner {
+    &:not(:last-child) {
+      margin: 0 0 30px;
+    }
+  }
+
+  // .auto__form
+
+  &__form {
   }
 }
 
@@ -109,6 +117,16 @@
 }
 
 .owner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 130px 0 0;
+
+  // .owner__main
+
+  &__main {
+  }
+
   // .owner__title
 
   &__title {
@@ -144,6 +162,16 @@
   &__name {
   }
 
+  // .owner__owner
+
+  &__owner {
+  }
+
+  // .owner__email
+
+  &__email {
+  }
+
   // .owner__text
 
   &__text {
@@ -161,8 +189,78 @@
     }
   }
 
-  // .owner__owner
+  // .owner__edit
 
-  &__owner {
+  &__edit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 0 20px;
+    min-height: 45px;
+    max-width: 100px;
+    font-size: 16px;
+    line-height: math.div(24px, 16px) * 100%;
+    text-align: center;
+    color: #fff;
+    background-color: $blueColor;
+  }
+}
+
+.form-owner {
+  transform: translate(200%, 0);
+  transition: transform 0.8s ease 0s;
+
+  &.active {
+    transform: translate(0, 0);
+  }
+
+  // .form-owner__form
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+  }
+
+  // .form-owner__item
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &:not(:last-child) {
+      margin: 0 0 10px;
+    }
+  }
+
+  // .form-owner__label
+
+  &__label {
+  }
+
+  // .form-owner__input
+
+  &__input {
+    flex: 0 1 340px;
+    margin: 0 0 0 10px;
+    border: 1px solid $blueColor;
+    padding: 5px 15px 5px 10px;
+  }
+
+  // .form-owner__button
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    min-height: 45px;
+    max-width: 100px;
+    font-size: 16px;
+    line-height: math.div(24px, 16px) * 100%;
+    text-align: center;
+    color: #fff;
+    background-color: $blueColor;
   }
 }

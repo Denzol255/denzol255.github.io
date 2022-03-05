@@ -12,18 +12,8 @@
   box-sizing: border-box;
 }
 
-:focus,
-:active {
-  // outline: none;
-}
-
 a {
   color: inherit;
-}
-
-a:focus,
-a:active {
-  // outline: none;
 }
 
 aside,
@@ -53,7 +43,6 @@ input,
 button,
 textarea {
   font-family: $fontFamily;
-  font-size: inherit;
 }
 
 input::-ms-clear {
