@@ -18,8 +18,6 @@ module.exports = function displayData(data) {
     return featuresStr;
   };
 
-  console.log(data);
-
   autoWrapper.insertAdjacentHTML(
     "afterbegin",
     `

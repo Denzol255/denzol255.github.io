@@ -182,9 +182,13 @@
   &__data {
     color: $grayColor;
 
+    &.changed {
+      color: rgb(32, 238, 32);
+    }
+
     // .owner__data_link
 
-    &_link {
+    &_email {
       color: $blueColor;
     }
   }
@@ -208,13 +212,6 @@
 }
 
 .form-owner {
-  transform: translate(200%, 0);
-  transition: transform 0.8s ease 0s;
-
-  &.active {
-    transform: translate(0, 0);
-  }
-
   // .form-owner__form
 
   &__form {
