@@ -22,7 +22,7 @@ module.exports = function displayData(data) {
     "afterbegin",
     `
   <div class="auto__image">
-    <img src="../img/2022-kia-sportage-front-quarter.jpg" alt="kia sportage">
+    <img src="./img/2022-kia-sportage-front-quarter.jpg" alt="kia sportage">
   </div>
   <div class="auto__info">
     <h1 class="auto__title">${title}</h1>
